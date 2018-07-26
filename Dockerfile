@@ -1,5 +1,3 @@
 FROM mongo
 
-COPY mongo/ /
-
-CMD mongorestore --host mongodb:27017
+COPY mongo/dump /home/dump
